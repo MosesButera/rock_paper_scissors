@@ -22,3 +22,6 @@ function getHumanChoice (choice){
 }
 
 console.log(getHumanChoice(choice));
+
+let humanScore = 0;
+let computerScore = 0; 
