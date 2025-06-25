@@ -1,5 +1,5 @@
 
-let randomNum = Math.floor(Math.random() * 3);
+let randomNum = Math.floor(Math.random() * 3); //Output should be limited to only 0,1,or 2 and nothing else.
  
 function getComputerChoice(randomNum) {
     if (randomNum == 0){
@@ -10,3 +10,5 @@ function getComputerChoice(randomNum) {
         return "SCISSORS";
     }
 }
+
+console.log(getComputerChoice(randomNum));
