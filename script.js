@@ -12,3 +12,13 @@ function getComputerChoice(randomNum) {
 }
 
 console.log(getComputerChoice(randomNum));
+
+let choice = prompt("Enter either ROCK, PAPER, or SCISSORS to play");
+
+function getHumanChoice (choice){
+    if (choice == "ROCK") return "ROCK";
+    else if (choice == "PAPER") return "PAPER";
+    else return "SCISSORS";
+}
+
+console.log(getHumanChoice(choice));
