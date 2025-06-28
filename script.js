@@ -22,11 +22,11 @@ function getComputerChoice() {
     let randomNum;
     randomNum = Math.floor(Math.random() * 3); //Output should be limited to only 0,1,or 2 and nothing else.
  
-    if (randomNum = 0){
+    if (randomNum == 0){
         return computer = "ROCK";
-    } else if (randomNum = 1){
+    } else if (randomNum == 1){
         return computer = "PAPER";
-    } else if (randomNum = 3){
+    } else if (randomNum == 3){
         return computer = "SCISSORS";
     }
 }
@@ -43,7 +43,7 @@ function playRound(){
     // getHumanChoice();
     // getComputerChoice();
 
-    console.log(`Player Choice: ${humanChoice} and Computer Choice: ${computer}`);
+    console.log(`Player Choice: ${humanChoice} and Computer Choice: ${computerChoice}`);
 
     if (humanChoice === computerChoice){
         return result = "Its a Draw!";
