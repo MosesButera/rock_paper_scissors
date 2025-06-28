@@ -15,6 +15,7 @@ function getHumanChoice (){
     
 }
 
+console.log(`Human choice is: ${getHumanChoice()}`);
 
 
 
