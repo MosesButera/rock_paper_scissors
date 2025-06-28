@@ -15,7 +15,7 @@ function getHumanChoice (){
     
 }
 
-console.log(`Human choice is: ${getHumanChoice()}`);
+// console.log(`Human choice is: ${getHumanChoice()}`);
 
 
 function getComputerChoice() {
@@ -31,7 +31,7 @@ function getComputerChoice() {
     }
 }
 
-console.log(`Computer choice is: ${getComputerChoice()}`);
+// console.log(`Computer choice is: ${getComputerChoice()}`);
 
 // let humanScore = 0;
 // let computerScore = 0;
@@ -43,17 +43,19 @@ function playRound(){
     // getHumanChoice();
     // getComputerChoice();
 
-    if (humanChoice == computerChoice){
+    console.log(`Player Choice: ${humanChoice} and Computer Choice: ${computer}`);
+
+    if (humanChoice === computerChoice){
         return result = "Its a Draw!";
     } 
-    else if (computerChoice == "ROCK"){
-        return (humanChoice == "PAPER") ? result = "You Win!" : "You Lose!"
+    else if (computerChoice === "ROCK"){
+        return (humanChoice === "PAPER") ? result = "You Win!" : "You Lose!"
     }
-    else if (computerChoice == "PAPER"){
-        return (humanChoice == "SCISSORS") ? result = "You Win!" : "You Lose!"
+    else if (computerChoice === "PAPER"){
+        return (humanChoice === "SCISSORS") ? result = "You Win!" : "You Lose!"
     }
-    else if (computerChoice == "SCISSORS"){
-        return (humanChoice == "ROCK") ? result = "You Win!" : "You Lose!"
+    else if (computerChoice === "SCISSORS"){
+        return (humanChoice === "ROCK") ? result = "You Win!" : "You Lose!"
     }
 
     //    return "You: " + humanChoice + " " + "Computer: " + computerChoice; 
@@ -62,7 +64,7 @@ function playRound(){
 
 // console.log(getHumanChoice());
 // console.log(getComputerChoice ());
-console.log(`Test round result is: ${playRound()}`);
+// console.log(`Test round result is: ${playRound()}`);
 
 
 
@@ -83,9 +85,11 @@ function playGame (){
         if (roundValue == "You Win!"){
             humanScore++;
             console.log("Player wins the round!");
+            alert(`You win this round your score is ${humanScore} and computer score is ${computerScore}`);
         } else if (roundValue == "You Lose!"){
             computerScore++;
             console.log("Computer wins the round!");
+            alert(`You lose this round your score is ${humanScore} and computer score is ${computerScore}`);
         } else if (roundValue == "Its a Draw!"){
             console.log("This round is tied!");
         }
@@ -93,7 +97,7 @@ function playGame (){
 
     // --- Final result ---
     console.log("Final Score:");
-    console.log("You: " + humanScore);
+    console.log("Player: " + humanScore);
     console.log("Computer: " + computerScore);
 
     console.log("Game Over!");
