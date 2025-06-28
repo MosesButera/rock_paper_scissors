@@ -91,6 +91,11 @@ function playGame (){
         }
     }
 
+    // --- Final result ---
+    console.log("Final Score:");
+    console.log("You: " + humanScore);
+    console.log("Computer: " + computerScore);
+
     console.log("Game Over!");
     if (humanScore > computerScore) {
         console.log("You win the GAME!");
