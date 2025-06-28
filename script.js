@@ -31,6 +31,10 @@ function getComputerChoice() {
     }
 }
 
+console.log(`Computer choice is: ${getComputerChoice()}`);
+
+// let humanScore = 0;
+// let computerScore = 0;
 
 
 
