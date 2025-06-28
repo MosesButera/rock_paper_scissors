@@ -72,7 +72,7 @@ let roundValue;
 
 function playGame (){
 
-    const numberOfRounds = 4;
+    const numberOfRounds = 5;
     
     
     for (let i = 0; i < numberOfRounds; i++){
