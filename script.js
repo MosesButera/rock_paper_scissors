@@ -18,6 +18,21 @@ function getHumanChoice (){
 console.log(`Human choice is: ${getHumanChoice()}`);
 
 
+function getComputerChoice() {
+    let randomNum;
+    randomNum = Math.floor(Math.random() * 3); //Output should be limited to only 0,1,or 2 and nothing else.
+ 
+    if (randomNum = 0){
+        return computer = "ROCK";
+    } else if (randomNum = 1){
+        return computer = "PAPER";
+    } else if (randomNum = 3){
+        return computer = "SCISSORS";
+    }
+}
+
+
+
 
 
 
