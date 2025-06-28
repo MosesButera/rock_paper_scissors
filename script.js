@@ -66,6 +66,46 @@ console.log(`Test round result is: ${playRound()}`);
 
 
 
+let humanScore = 0;
+let computerScore = 0;
+let roundValue;
+
+function playGame (){
+
+    const numberOfRounds = 4;
+    
+    
+    for (let i = 0; i < numberOfRounds; i++){
+        // getHumanChoice();
+        // getComputerChoice();
+        roundValue = playRound();
+        
+        if (roundValue == "You Win!"){
+            humanScore++;
+            console.log("Player wins the round!");
+        } else if (roundValue == "You Lose!"){
+            computerScore++;
+            console.log("Computer wins the round!");
+        } else if (roundValue == "Its a Draw!"){
+            console.log("This round is tied!");
+        }
+    }
+
+    console.log("Game Over!");
+    if (humanScore > computerScore) {
+        console.log("You win the GAME!");
+        } else if (computerScore > humanScore){
+        console.log("Sorry Computer wins the GAME!");
+        } else if (computerScore = humanScore){
+        console.log("Its a drawn GAME!");
+        } 
+}
+
+playGame();
+
+
+
+
 
 
 
