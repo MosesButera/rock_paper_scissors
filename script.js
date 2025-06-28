@@ -36,6 +36,32 @@ console.log(`Computer choice is: ${getComputerChoice()}`);
 // let humanScore = 0;
 // let computerScore = 0;
 
+function playRound(){
+
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+    // getHumanChoice();
+    // getComputerChoice();
+
+    if (humanChoice == computerChoice){
+        return result = "Its a Draw!";
+    } 
+    else if (computerChoice == "ROCK"){
+        return (humanChoice == "PAPER") ? result = "You Win!" : "You Lose!"
+    }
+    else if (computerChoice == "PAPER"){
+        return (humanChoice == "SCISSORS") ? result = "You Win!" : "You Lose!"
+    }
+    else if (computerChoice == "SCISSORS"){
+        return (humanChoice == "ROCK") ? result = "You Win!" : "You Lose!"
+    }
+
+    //    return "You: " + humanChoice + " " + "Computer: " + computerChoice; 
+   
+}
+
+
+
 
 
 
