@@ -60,7 +60,9 @@ function playRound(){
    
 }
 
-
+// console.log(getHumanChoice());
+// console.log(getComputerChoice ());
+console.log(`Test round result is: ${playRound()}`);
 
 
 
