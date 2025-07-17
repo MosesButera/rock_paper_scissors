@@ -102,3 +102,17 @@ function handleButtonClick(event){
 
     checkGameOver(); //Check if either player has reached 5 points
 }
+
+function getHumanChoice (){
+    const buttons = document.querySelectorAll(".my-button");
+    buttons.forEach(button => {
+        button.addEventListener('click', handleButtonClick);
+    });
+}
+
+function removeHumanChoice(){
+    const buttons = document.querySelectorAll(".my-button");
+    buttons.forEach(button => {
+        button.removeEventListener("click", handleButtonClick);
+    });
+}
