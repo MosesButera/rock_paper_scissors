@@ -60,3 +60,17 @@ function updateScoreDisplay(result){
         return computerScoreDiv.textContent = computerScore;
     } 
 }
+
+function checkGameOver(){
+    const finalResultDiv = document.querySelector(".result");
+
+    if (humanScore === 5 || computerScore === 5) {
+        removeHumanChoice(); // Disable buttons
+
+        if (humanScore > computerScore){
+            finalResultDiv.textContent = `YOU WIN! Game Over! Final Score — Human: ${humanScore}, Computer: ${computerScore}. Refresh to play again!`;
+        }else {
+            finalResultDiv.textContent = `YOU LOSE!Game Over! Final Score — Human: ${humanScore}, Computer: ${computerScore}. Refresh to play again!`;
+        }
+    }
+}
