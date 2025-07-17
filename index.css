@@ -14,3 +14,13 @@
     margin-bottom: 30px;
     color: #2c3e50;
 }
+
+/* Output areas */
+.computerChoiceOutput,
+.round-result,
+.playerChoiceOutput,
+.result {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
