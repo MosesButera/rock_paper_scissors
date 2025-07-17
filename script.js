@@ -116,3 +116,7 @@ function removeHumanChoice(){
         button.removeEventListener("click", handleButtonClick);
     });
 }
+
+// 5. GAME START
+getHumanChoice();
+
