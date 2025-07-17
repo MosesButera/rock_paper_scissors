@@ -39,3 +39,24 @@ function playRound(humanChoice) {
         return roundResultDiv.textContent = "You Lose!";
     }
 }
+
+// 3. SCORE DISPLAY & GAME OVER
+
+function updateScoreDisplay(result){
+    const humanScoreDiv = document.querySelector(".player-score");
+    const computerScoreDiv = document.querySelector(".computer-score");
+
+    if (result == "You Win!"){
+        humanScore = humanScore + 1
+        console.log("humanScore", humanScore);
+        console.log("computerScore", computerScore);
+        computerScoreDiv.textContent = computerScore;
+        return humanScoreDiv.textContent = humanScore; 
+    } else if (result == "You Lose!"){
+        computerScore = computerScore + 1
+        console.log("humanScore", humanScore);
+        console.log("computerScore", computerScore);
+        humanScoreDiv.textContent = humanScore;
+        return computerScoreDiv.textContent = computerScore;
+    } 
+}
