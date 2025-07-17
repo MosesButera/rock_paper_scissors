@@ -20,3 +20,22 @@ function getComputerChoice() {
     computerOutputDiv.textContent = `Computer Choice: ${choice}`;
     return choice;
 };
+
+function playRound(humanChoice) {
+    const roundResultDiv = document.querySelector(".round-result");
+    const computerChoice = getComputerChoice();
+
+    if (humanChoice === computerChoice) {
+        return roundResultDiv.textContent = "It's a Draw!";
+    }
+
+    if (
+        (humanChoice === "ROCK" && computerChoice === "SCISSORS") ||
+        (humanChoice === "PAPER" && computerChoice === "ROCK") ||
+        (humanChoice === "SCISSORS" && computerChoice === "PAPER")
+    ) {
+        return roundResultDiv.textContent = "You Win!";
+    } else {
+        return roundResultDiv.textContent = "You Lose!";
+    }
+}
