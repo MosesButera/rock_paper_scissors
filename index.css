@@ -6,3 +6,11 @@
         padding: 40px;
         color: #333;
     }
+
+    /* Title */
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
