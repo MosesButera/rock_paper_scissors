@@ -74,3 +74,31 @@ function checkGameOver(){
         }
     }
 }
+
+// 4. EVENT HANDLING
+
+function handleButtonClick(event){
+    const playerOutputDiv = document.querySelector(".playerChoiceOutput");
+    
+    const clickedButton = event.target;   //Get the button/element 
+    // textContent the player clicked on and use event.target to 
+    // find out which button was pressed 
+
+    const playerSelection = clickedButton.textContent;  //and save 
+    // its text content in playerSelection variable. 
+
+    playerOutputDiv.textContent = `Player Choice: ${playerSelection}`;
+    const result = playRound(playerSelection);    // Play one round of the game
+    //Call playRound() and pass in the player’s choice. Store the result
+    //  ("You Win!", "You Lose!", or "It's a Draw!"). 
+
+    console.log("Game result:", result);     //Show the result 
+    // in the browser console. Example: "Game result: You Win!"
+
+    const latestScore = updateScoreDisplay(result);  //Update the score on 
+    // the screen. Call updateScoreDisplay() and give it the result. It will 
+    // add 1 to the winner’s score and display it
+    console.log("Latest Score:", latestScore);
+
+    checkGameOver(); //Check if either player has reached 5 points
+}
