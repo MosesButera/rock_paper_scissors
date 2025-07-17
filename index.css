@@ -51,3 +51,12 @@
 .my-button:hover {
     background-color: #2980b9;
 }
+
+/* Final result message */
+.result {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 30px;
+}
+ 
